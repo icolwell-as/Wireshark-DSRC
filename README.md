@@ -8,8 +8,11 @@ Usually based on latest Wireshark development release, in this case 3.1.0.
 Compiled and built for 64-bits only!
 
 Linux (Debian/Ubuntu) Packages
+
   dpkg -i *.deb
+
   apt-get -f install
+
 
 Windows Installer (don't install over existing production release)
 
