@@ -16,5 +16,7 @@ Linux (Debian/Ubuntu) Packages
 
 Windows Installer (don't install over existing production release)
 
+  Run install.bat to combine split files and run installer
+
 *** I cannot release additional sources as the ASN.1 for SAE J2735 is copyrighted material! ***
 
