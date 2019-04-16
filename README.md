@@ -3,7 +3,8 @@
 
 1. Wireshark 3.0.0 added support for WSMP and 1609.2
 2. Including EU ETSI ITS support.
-3. IEEE 1609.3 and 1609.4 are not supported yet.
+3. Supports only the 2016 standards from IEEE and SAE
+4. IEEE 1609.3 and 1609.4 are not supported yet.
 
 Builds are based on latest Wireshark development release, in this case 3.1.0.  Compiled and built for 64-bits only!
 
