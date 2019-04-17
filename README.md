@@ -15,4 +15,6 @@ Builds are based on latest Wireshark development release, in this case 3.1.0.  C
 **Windows Installer** (don't install over existing production release)
 1. Run install.bat to combine split files and run installer
 
-**I cannot release additional sources as the ASN.1 for SAE J2735 is copyrighted material!**
+For DIY folks, the gory details for building Wireshark on Linux is here: https://www.wireshark.org/docs/wsdg_html_chunked/ChSrcBuildFirstTime.html#_building_on_unix and Windows is here: https://www.wireshark.org/docs/wsdg_html_chunked/ChSetupWin32.html.
+
+**I cannot release the ASN.1 for SAE J2735 because it is copyrighted material!**
