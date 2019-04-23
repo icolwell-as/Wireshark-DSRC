@@ -14,7 +14,7 @@ Builds are based on latest Wireshark development release, in this case 3.1.0.  C
 
 For DIY folks, the gory details for building Wireshark on Linux is here: https://www.wireshark.org/docs/wsdg_html_chunked/ChSrcBuildFirstTime.html#_building_on_unix
 
-I had to build this on Ubuntu: https://github.com/BelledonneCommunications/bcg729
+I had to build this on Ubuntu: https://github.com/BelledonneCommunications/bcg729, but I included the Debian packages in the Linux area.
 
 **Windows Installer** (don't install over existing production release)
 1. Run install.bat to combine split files and run installer
@@ -22,6 +22,8 @@ I had to build this on Ubuntu: https://github.com/BelledonneCommunications/bcg72
 For DIY folks, the build for Windows is here: https://www.wireshark.org/docs/wsdg_html_chunked/ChSetupWin32.html
 
 **Sources**
-TBD
+1. git clone https://code.wireshark.org/review/wireshark
+2. The files under Sources go into the Wireshark root directory
+3. Please diff the CMakeLists.txt files so that you don't break your build.
 
-**I cannot release the ASN.1 for SAE J2735 because it is copyrighted material!**
+**I cannot release the ASN.1 file for SAE J2735 because it is copyrighted material!**
