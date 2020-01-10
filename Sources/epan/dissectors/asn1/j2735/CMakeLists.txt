@@ -10,7 +10,7 @@
 set( PROTOCOL_NAME j2735 )
 
 set( ASN_FILE_LIST
-	J2735_201603DA.asn
+	J2735_201603DA-wireshark.ASN
 )
 
 set( EXTRA_DIST
