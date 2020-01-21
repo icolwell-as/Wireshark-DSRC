@@ -14,6 +14,7 @@
 #include <epan/conversation.h>
 #include <epan/oids.h>
 #include <epan/asn1.h>
+#include <epan/proto_data.h>
 
 #include "packet-per.h"
 #include "packet-ieee1609dot2.h"
@@ -87,6 +88,7 @@ dissect_j2735(tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree, void* data _U
 }
 
 /*--- proto_register_j2735 ----------------------------------------------*/
+
 void proto_register_j2735(void) {
 
   /* List of fields */
@@ -130,8 +132,11 @@ void proto_reg_handoff_j2735(void) {
   // V2I
   dissector_add_uint("ieee1609dot2.psid", psid_intersection_safety_and_awareness, j2735_handle);        // MAP+SPAT
   // SRM+SSM?
+
+  // RSM (BIM)?
+
+  // TIM
   dissector_add_uint("ieee1609dot2.psid", psid_traveller_information_and_roadside_signage, j2735_handle);   // TIM
-  // RSM?
 
   // V2P
   dissector_add_uint("ieee1609dot2.psid", psid_vulnerable_road_users_safety_applications, j2735_handle);
@@ -140,6 +145,9 @@ void proto_reg_handoff_j2735(void) {
   dissector_add_uint("ieee1609dot2.psid", psid_differential_gps_corrections_compressed, j2735_handle);
   dissector_add_uint("ieee1609dot2.psid", psid_differential_gps_corrections_uncompressed, j2735_handle);
 
+  // Other
   dissector_add_uint("ieee1609dot2.psid", psid_mobile_probe_exchanges, j2735_handle);                   // ProbeData
+
+  // UDP
 }
 
