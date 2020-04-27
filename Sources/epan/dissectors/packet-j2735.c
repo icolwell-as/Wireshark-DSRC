@@ -8340,7 +8340,7 @@ dissect_j2735_MovementPhaseState(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *
 static int
 dissect_j2735_TimeMark(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *actx _U_, proto_tree *tree _U_, int hf_index _U_) {
   offset = dissect_per_constrained_integer(tvb, offset, actx, tree, hf_index,
-                                                            0U, 36001U, NULL, FALSE);
+                                                            0U, 36111U, NULL, FALSE);
 
   return offset;
 }
@@ -13814,6 +13814,5 @@ void proto_reg_handoff_j2735(void) {
   dissector_add_uint("ieee1609dot2.psid", psid_mobile_probe_exchanges, j2735_handle);                   // ProbeData
 
   // UDP
-  dissector_add_uint("udp.port", 2730, j2735_handle);
 }
 

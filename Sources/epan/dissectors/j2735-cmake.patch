@@ -1,0 +1,24 @@
+diff --git a/epan/dissectors/CMakeLists.txt b/epan/dissectors/CMakeLists.txt
+index b656aa57da..7e9ad737b0 100644
+--- a/epan/dissectors/CMakeLists.txt
++++ b/epan/dissectors/CMakeLists.txt
+@@ -198,6 +198,7 @@ set(CLEAN_ASN1_DISSECTOR_SRC
+ )
+ 
+ set(DIRTY_ASN1_DISSECTOR_SRC
++	${CMAKE_CURRENT_SOURCE_DIR}/packet-j2735.c
+ )
+ 
+ set(ASN1_DISSECTOR_SRC
+diff --git a/epan/dissectors/asn1/CMakeLists.txt b/epan/dissectors/asn1/CMakeLists.txt
+index 0df6bfcc57..d0d74675e1 100644
+--- a/epan/dissectors/asn1/CMakeLists.txt
++++ b/epan/dissectors/asn1/CMakeLists.txt
+@@ -59,6 +59,7 @@ set(ASN1_SRC_DIRS
+ 	inap
+ 	isdn-sup
+ 	its
++	j2735
+ 	kerberos
+ 	lcsap
+ 	ldap

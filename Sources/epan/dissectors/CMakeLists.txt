@@ -248,6 +248,7 @@ set(DISSECTOR_PUBLIC_HEADERS
 	file-rbm.h
 	packet-6lowpan.h
 	packet-a21.h
+	packet-acdr.h
 	packet-acp133.h
 	packet-acse.h
 	packet-actrace.h
@@ -356,6 +357,7 @@ set(DISSECTOR_PUBLIC_HEADERS
 	packet-fmp.h
 	packet-frame.h
 	packet-ftam.h
+	packet-ftdi-ft.h
 	packet-geonw.h
 	packet-giop.h
 	packet-gluster.h
@@ -433,6 +435,7 @@ set(DISSECTOR_PUBLIC_HEADERS
 	packet-lnet.h
 	packet-logotypecertextn.h
 	packet-lpp.h
+	packet-lppa.h
 	packet-lte-rrc.h
 	packet-mac-lte.h
 	packet-mausb.h
@@ -651,6 +654,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-aarp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-aastra-aasp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-acap.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-acdr.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-acn.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-acr122.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-actrace.c
@@ -809,6 +813,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-cisco-erspan.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-cisco-fp-mim.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-cisco-marker.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-cisco-mcp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-cisco-metadata.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-cisco-oui.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-cisco-sm.c
@@ -1058,6 +1063,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-fractalgeneratorprotocol.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-frame.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-ftdi-ft.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-ftdi-mpsse.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-ftp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-fw1.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-g723.c
@@ -1275,6 +1281,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-ixiatrailer.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-ixveriwave.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-j1939.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-jdwp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-jmirror.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-jpeg.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-json.c
@@ -1532,6 +1539,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-ossp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-ouch.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-p_mul.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-pa-hbbackup.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-pathport.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-packetbb.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-packetlogger.c
@@ -1774,6 +1782,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-tdmoe.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-tdmop.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-tds.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-teap.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-teamspeak2.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-teimanagement.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-teklink.c
@@ -1820,6 +1829,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-ucp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-udld.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-udp.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-udpcp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-uds.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-udt.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-uftp.c
@@ -1837,6 +1847,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-usb-hub.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-usb-i1d3.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-usb-masstorage.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-usb-printer.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-usb-video.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-usb.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-usbip.c
