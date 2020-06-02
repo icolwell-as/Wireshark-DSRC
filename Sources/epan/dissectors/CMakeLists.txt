@@ -933,8 +933,10 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dis.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-distcc.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dji-uav.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-dlep.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dlm3.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dlsw.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-dlt.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dmp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dmx.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dnp.c
@@ -961,7 +963,6 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dtn.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dtp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dtpt.c
-	${CMAKE_CURRENT_SOURCE_DIR}/packet-dlt.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dua.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dvb-ait.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-dvb-bat.c
@@ -1318,6 +1319,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-lbmpdm.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-lbmpdmtcp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-lbmr.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-lbmsrs.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-lbtrm.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-lbtru.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-lbttcp.c
@@ -1695,6 +1697,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-scsi.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-scte35.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-sctp.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-scylla.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-sdh.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-sdlc.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-sdp.c
@@ -1834,6 +1837,7 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-udt.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-uftp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-uftp4.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-uftp5.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-uhd.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-uma.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-umts_fp.c
