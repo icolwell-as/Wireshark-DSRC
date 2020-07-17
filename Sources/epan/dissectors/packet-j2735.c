@@ -2399,7 +2399,7 @@ dissect_j2735_AccelerationSet4Way(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t 
 }
 
 
-static const int * BrakeAppliedStatus_bits[] = {
+static int * const BrakeAppliedStatus_bits[] = {
   &hf_j2735_BrakeAppliedStatus_unavailable,
   &hf_j2735_BrakeAppliedStatus_leftFront,
   &hf_j2735_BrakeAppliedStatus_leftRear,
@@ -2832,7 +2832,7 @@ dissect_j2735_Priority(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *actx _U_, 
 }
 
 
-static const int * HeadingSlice_bits[] = {
+static int * const HeadingSlice_bits[] = {
   &hf_j2735_HeadingSlice_from000_0to022_5degrees,
   &hf_j2735_HeadingSlice_from022_5to045_0degrees,
   &hf_j2735_HeadingSlice_from045_0to067_5degrees,
@@ -3019,7 +3019,7 @@ dissect_j2735_DDateTime(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *actx _U_,
 }
 
 
-static const int * VerticalAccelerationThreshold_bits[] = {
+static int * const VerticalAccelerationThreshold_bits[] = {
   &hf_j2735_VerticalAccelerationThreshold_notEquipped,
   &hf_j2735_VerticalAccelerationThreshold_leftFront,
   &hf_j2735_VerticalAccelerationThreshold_leftRear,
@@ -3081,7 +3081,7 @@ dissect_j2735_PivotPointDescription(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_
 }
 
 
-static const int * GNSSstatus_bits[] = {
+static int * const GNSSstatus_bits[] = {
   &hf_j2735_GNSSstatus_unavailable,
   &hf_j2735_GNSSstatus_isHealthy,
   &hf_j2735_GNSSstatus_isMonitored,
@@ -3250,7 +3250,7 @@ dissect_j2735_MultiVehicleResponse(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t
 }
 
 
-static const int * PrivilegedEventFlags_bits[] = {
+static int * const PrivilegedEventFlags_bits[] = {
   &hf_j2735_PrivilegedEventFlags_peUnavailable,
   &hf_j2735_PrivilegedEventFlags_peEmergencyResponse,
   &hf_j2735_PrivilegedEventFlags_peEmergencyLightsActive,
@@ -5262,7 +5262,7 @@ dissect_j2735_VehicleID(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *actx _U_,
 }
 
 
-static const int * VehicleEventFlags_bits[] = {
+static int * const VehicleEventFlags_bits[] = {
   &hf_j2735_VehicleEventFlags_eventHazardLights,
   &hf_j2735_VehicleEventFlags_eventStopLineViolation,
   &hf_j2735_VehicleEventFlags_eventABSactivated,
@@ -5288,7 +5288,7 @@ dissect_j2735_VehicleEventFlags(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *a
 }
 
 
-static const int * ExteriorLights_bits[] = {
+static int * const ExteriorLights_bits[] = {
   &hf_j2735_ExteriorLights_lowBeamHeadlightsOn,
   &hf_j2735_ExteriorLights_highBeamHeadlightsOn,
   &hf_j2735_ExteriorLights_leftTurnSignalOn,
@@ -5557,7 +5557,7 @@ dissect_j2735_SignalReqScheme(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *act
 }
 
 
-static const int * TransitStatus_bits[] = {
+static int * const TransitStatus_bits[] = {
   &hf_j2735_TransitStatus_none,
   &hf_j2735_TransitStatus_anADAuse,
   &hf_j2735_TransitStatus_aBikeLoad,
@@ -5833,7 +5833,7 @@ dissect_j2735_LayerID(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *actx _U_, p
 }
 
 
-static const int * LaneDirection_bits[] = {
+static int * const LaneDirection_bits[] = {
   &hf_j2735_LaneDirection_ingressPath,
   &hf_j2735_LaneDirection_egressPath,
   NULL
@@ -5848,7 +5848,7 @@ dissect_j2735_LaneDirection(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *actx 
 }
 
 
-static const int * LaneSharing_bits[] = {
+static int * const LaneSharing_bits[] = {
   &hf_j2735_LaneSharing_overlappingLaneDescriptionProvided,
   &hf_j2735_LaneSharing_multipleLanesTreatedAsOneLane,
   &hf_j2735_LaneSharing_otherNonMotorizedTrafficTypes,
@@ -5871,7 +5871,7 @@ dissect_j2735_LaneSharing(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *actx _U
 }
 
 
-static const int * LaneAttributes_Vehicle_bits[] = {
+static int * const LaneAttributes_Vehicle_bits[] = {
   &hf_j2735_LaneAttributes_Vehicle_isVehicleRevocableLane,
   &hf_j2735_LaneAttributes_Vehicle_isVehicleFlyOverLane,
   &hf_j2735_LaneAttributes_Vehicle_hovLaneUseOnly,
@@ -5892,7 +5892,7 @@ dissect_j2735_LaneAttributes_Vehicle(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx
 }
 
 
-static const int * LaneAttributes_Crosswalk_bits[] = {
+static int * const LaneAttributes_Crosswalk_bits[] = {
   &hf_j2735_LaneAttributes_Crosswalk_crosswalkRevocableLane,
   &hf_j2735_LaneAttributes_Crosswalk_bicyleUseAllowed,
   &hf_j2735_LaneAttributes_Crosswalk_isXwalkFlyOverLane,
@@ -5914,7 +5914,7 @@ dissect_j2735_LaneAttributes_Crosswalk(tvbuff_t *tvb _U_, int offset _U_, asn1_c
 }
 
 
-static const int * LaneAttributes_Bike_bits[] = {
+static int * const LaneAttributes_Bike_bits[] = {
   &hf_j2735_LaneAttributes_Bike_bikeRevocableLane,
   &hf_j2735_LaneAttributes_Bike_pedestrianUseAllowed,
   &hf_j2735_LaneAttributes_Bike_isBikeFlyOverLane,
@@ -5934,7 +5934,7 @@ dissect_j2735_LaneAttributes_Bike(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t 
 }
 
 
-static const int * LaneAttributes_Sidewalk_bits[] = {
+static int * const LaneAttributes_Sidewalk_bits[] = {
   &hf_j2735_LaneAttributes_Sidewalk_sidewalk_RevocableLane,
   &hf_j2735_LaneAttributes_Sidewalk_bicyleUseAllowed,
   &hf_j2735_LaneAttributes_Sidewalk_isSidewalkFlyOverLane,
@@ -5951,7 +5951,7 @@ dissect_j2735_LaneAttributes_Sidewalk(tvbuff_t *tvb _U_, int offset _U_, asn1_ct
 }
 
 
-static const int * LaneAttributes_Barrier_bits[] = {
+static int * const LaneAttributes_Barrier_bits[] = {
   &hf_j2735_LaneAttributes_Barrier_median_RevocableLane,
   &hf_j2735_LaneAttributes_Barrier_median,
   &hf_j2735_LaneAttributes_Barrier_whiteLineHashing,
@@ -5974,7 +5974,7 @@ dissect_j2735_LaneAttributes_Barrier(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx
 }
 
 
-static const int * LaneAttributes_Striping_bits[] = {
+static int * const LaneAttributes_Striping_bits[] = {
   &hf_j2735_LaneAttributes_Striping_stripeToConnectingLanesRevocableLane,
   &hf_j2735_LaneAttributes_Striping_stripeDrawOnLeft,
   &hf_j2735_LaneAttributes_Striping_stripeDrawOnRight,
@@ -5993,7 +5993,7 @@ dissect_j2735_LaneAttributes_Striping(tvbuff_t *tvb _U_, int offset _U_, asn1_ct
 }
 
 
-static const int * LaneAttributes_TrackedVehicle_bits[] = {
+static int * const LaneAttributes_TrackedVehicle_bits[] = {
   &hf_j2735_LaneAttributes_TrackedVehicle_spec_RevocableLane,
   &hf_j2735_LaneAttributes_TrackedVehicle_spec_commuterRailRoadTrack,
   &hf_j2735_LaneAttributes_TrackedVehicle_spec_lightRailRoadTrack,
@@ -6011,7 +6011,7 @@ dissect_j2735_LaneAttributes_TrackedVehicle(tvbuff_t *tvb _U_, int offset _U_, a
 }
 
 
-static const int * LaneAttributes_Parking_bits[] = {
+static int * const LaneAttributes_Parking_bits[] = {
   &hf_j2735_LaneAttributes_Parking_parkingRevocableLane,
   &hf_j2735_LaneAttributes_Parking_parallelParkingInUse,
   &hf_j2735_LaneAttributes_Parking_headInParkingInUse,
@@ -6082,7 +6082,7 @@ dissect_j2735_LaneAttributes(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *actx
 }
 
 
-static const int * AllowedManeuvers_bits[] = {
+static int * const AllowedManeuvers_bits[] = {
   &hf_j2735_AllowedManeuvers_maneuverStraightAllowed,
   &hf_j2735_AllowedManeuvers_maneuverLeftAllowed,
   &hf_j2735_AllowedManeuvers_maneuverRightAllowed,
@@ -6723,7 +6723,7 @@ dissect_j2735_PropelledInformation(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t
 }
 
 
-static const int * PersonalDeviceUsageState_bits[] = {
+static int * const PersonalDeviceUsageState_bits[] = {
   &hf_j2735_PersonalDeviceUsageState_unavailable,
   &hf_j2735_PersonalDeviceUsageState_other,
   &hf_j2735_PersonalDeviceUsageState_idle,
@@ -6813,7 +6813,7 @@ dissect_j2735_PublicSafetyEventResponderWorkerType(tvbuff_t *tvb _U_, int offset
 }
 
 
-static const int * PublicSafetyAndRoadWorkerActivity_bits[] = {
+static int * const PublicSafetyAndRoadWorkerActivity_bits[] = {
   &hf_j2735_PublicSafetyAndRoadWorkerActivity_unavailable,
   &hf_j2735_PublicSafetyAndRoadWorkerActivity_workingOnRoad,
   &hf_j2735_PublicSafetyAndRoadWorkerActivity_settingUpClosures,
@@ -6832,7 +6832,7 @@ dissect_j2735_PublicSafetyAndRoadWorkerActivity(tvbuff_t *tvb _U_, int offset _U
 }
 
 
-static const int * PublicSafetyDirectingTrafficSubType_bits[] = {
+static int * const PublicSafetyDirectingTrafficSubType_bits[] = {
   &hf_j2735_PublicSafetyDirectingTrafficSubType_unavailable,
   &hf_j2735_PublicSafetyDirectingTrafficSubType_policeAndTrafficOfficers,
   &hf_j2735_PublicSafetyDirectingTrafficSubType_trafficControlPersons,
@@ -6852,7 +6852,7 @@ dissect_j2735_PublicSafetyDirectingTrafficSubType(tvbuff_t *tvb _U_, int offset 
 }
 
 
-static const int * PersonalAssistive_bits[] = {
+static int * const PersonalAssistive_bits[] = {
   &hf_j2735_PersonalAssistive_unavailable,
   &hf_j2735_PersonalAssistive_otherType,
   &hf_j2735_PersonalAssistive_vision,
@@ -6871,7 +6871,7 @@ dissect_j2735_PersonalAssistive(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t *a
 }
 
 
-static const int * UserSizeAndBehaviour_bits[] = {
+static int * const UserSizeAndBehaviour_bits[] = {
   &hf_j2735_UserSizeAndBehaviour_unavailable,
   &hf_j2735_UserSizeAndBehaviour_smallStature,
   &hf_j2735_UserSizeAndBehaviour_largeStature,
@@ -8077,7 +8077,7 @@ dissect_j2735_RequestorPositionVector(tvbuff_t *tvb _U_, int offset _U_, asn1_ct
 }
 
 
-static const int * TransitVehicleStatus_bits[] = {
+static int * const TransitVehicleStatus_bits[] = {
   &hf_j2735_TransitVehicleStatus_loading,
   &hf_j2735_TransitVehicleStatus_anADAuse,
   &hf_j2735_TransitVehicleStatus_aBikeLoad,
@@ -8271,7 +8271,7 @@ dissect_j2735_SignalStatusMessage(tvbuff_t *tvb _U_, int offset _U_, asn1_ctx_t 
 }
 
 
-static const int * IntersectionStatusObject_bits[] = {
+static int * const IntersectionStatusObject_bits[] = {
   &hf_j2735_IntersectionStatusObject_manualControlIsEnabled,
   &hf_j2735_IntersectionStatusObject_stopTimeIsActivated,
   &hf_j2735_IntersectionStatusObject_failureFlash,
