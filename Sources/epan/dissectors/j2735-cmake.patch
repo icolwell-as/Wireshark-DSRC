@@ -1,5 +1,5 @@
 diff --git a/epan/dissectors/CMakeLists.txt b/epan/dissectors/CMakeLists.txt
-index 14ae2d9a6a..ab9e7c0854 100644
+index 49842389d8..4000965d3f 100644
 --- a/epan/dissectors/CMakeLists.txt
 +++ b/epan/dissectors/CMakeLists.txt
 @@ -198,6 +198,7 @@ set(CLEAN_ASN1_DISSECTOR_SRC

@@ -10,9 +10,6 @@
 set( PROTOCOL_NAME j2735 )
 
 set( ASN_FILE_LIST
-<<<<<<< HEAD
-	J2735_201603DA-wireshark.ASN
-=======
   J2735-AddGrpB.asn
   J2735-AddGrpC.asn
   J2735-BasicSafetyMessage.asn
@@ -51,7 +48,6 @@ set( ASN_FILE_LIST
   J2735-TestMessage14.asn
   J2735-TestMessage15.asn
   J2735-TravelerInformation.asn
->>>>>>> bfa11f223e9d47d7af5d9a722f8b063724517620
 )
 
 set( EXTRA_DIST
