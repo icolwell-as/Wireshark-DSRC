@@ -130,7 +130,8 @@ void proto_reg_handoff_j2735(void) {
   dissector_add_uint("ieee1609dot2.psid", psid_limited_sensor_vehicle_to_vehicle_safety_and_awarenesss, j2735_handle);
 
   // V2I
-  dissector_add_uint("ieee1609dot2.psid", psid_intersection_safety_and_awareness, j2735_handle);        // MAP+SPAT
+  // MAP+SPAT
+  dissector_add_uint("ieee1609dot2.psid", psid_intersection_safety_and_awareness, j2735_handle);
   // SRM+SSM?
 
   // RSM (BIM)?
@@ -146,7 +147,8 @@ void proto_reg_handoff_j2735(void) {
   dissector_add_uint("ieee1609dot2.psid", psid_differential_gps_corrections_uncompressed, j2735_handle);
 
   // Other
-  dissector_add_uint("ieee1609dot2.psid", psid_mobile_probe_exchanges, j2735_handle);                   // ProbeData
+  dissector_add_uint("ieee1609dot2.psid", psid_mobile_probe_exchanges, j2735_handle);
+  dissector_add_uint("ieee1609dot2.psid", psid_connected_vehicle_pilot, j2735_handle); // CV-Pilot
 
   // UDP
 }
