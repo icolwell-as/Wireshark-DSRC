@@ -148,7 +148,7 @@ void proto_reg_handoff_j2735(void) {
 
   // Other
   dissector_add_uint("ieee1609dot2.psid", psid_mobile_probe_exchanges, j2735_handle);
-  dissector_add_uint("ieee1609dot2.psid", psid_connected_vehicle_pilot, j2735_handle); // CV-Pilot
+  dissector_add_uint("ieee1609dot2.psid", 2113687, j2735_handle); // CV-Pilot
 
   // UDP
 }

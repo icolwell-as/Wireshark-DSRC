@@ -13802,7 +13802,7 @@ void proto_reg_handoff_j2735(void) {
   // RSM (BIM)?
 
   // TIM
-  dissector_add_uint("ieee1609dot2.psid", psid_traveller_information_and_roadside_signage, j2735_handle);
+  dissector_add_uint("ieee1609dot2.psid", psid_traveller_information_and_roadside_signage, j2735_handle);   // TIM
 
   // V2P
   dissector_add_uint("ieee1609dot2.psid", psid_vulnerable_road_users_safety_applications, j2735_handle);
@@ -13813,8 +13813,8 @@ void proto_reg_handoff_j2735(void) {
 
   // Other
   dissector_add_uint("ieee1609dot2.psid", psid_mobile_probe_exchanges, j2735_handle);
-  dissector_add_uint("ieee1609dot2.psid", psid_connected_vehicle_pilot, j2735_handle);
-  
+  dissector_add_uint("ieee1609dot2.psid", 2113687, j2735_handle); // CV-Pilot
+
   // UDP
 }
 
