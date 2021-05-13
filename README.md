@@ -5,14 +5,16 @@
 2. Included EU ITS support from ETSI
 3. Supports the IEEE 1609.2, 1609.3-WSMP and SAE J2735-2016/2020 standards
 4. IEEE 1609.3 and 1609.4 are not fully supported yet
-5. Linux builds will move to Ubuntu 20.04 and SAE J2735-2020
-6. 64-bit only
+5. Cellular is not supported
+6. Wireshark builds have moved to Ubuntu 20.04
+7. Now uses SAE J2735-2020
+8. 64-bit only
 
 **Releases**
-1. v3.3.0-2016 Wireshark 3.3.0 with SAE J2735-2016
+1. v3.5.0-2020 Wireshark 3.5.0 with SAE J2735-2016
 2. TBD
 
-Builds are based on latest Wireshark development release, in this case 3.3.0.  Compiled and built for 64-bits only!
+Builds are based on latest Wireshark development release, in this case 3.5.0.  Compiled and built for 64-bits only!
 
 **Linux (Debian/Ubuntu) Packages**
 1. dpkg -i *.deb
